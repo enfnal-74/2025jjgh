@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OECD Teaching Compass: 교사 재교육 프로그램</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* 커스텀 폰트 적용 */
+        body {
+            font-family: 'Noto Sans KR', 'Poppins', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-800">
+                <i class="fas fa-compass"></i> OECD Teaching Compass
+            </a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#introduction" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">소개</a>
+                <a href="#key-concepts" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">핵심 개념</a>
+                <a href="#vision" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">미래 비전</a>
+                <a href="#ecosystem" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">학습 생태계</a>
+                <a href="https://www.oecd.org/education/oecd-future-of-education-and-skills-2030/" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">
+                    <i class="fas fa-file-alt mr-2"></i>원문 보기
+                </a>
+            </div>
+            <button class="md:hidden" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#introduction" class="block py-2 px-4 text-sm hover:bg-gray-200">소개</a>
+            <a href="#key-concepts" class="block py-2 px-4 text-sm hover:bg-gray-200">핵심 개념</a>
+            <a href="#vision" class="block py-2 px-4 text-sm hover:bg-gray-200">미래 비전</a>
+            <a href="#ecosystem" class="block py-2 px-4 text-sm hover:bg-gray-200">학습 생태계</a>
+            <a href="https://www.oecd.org/education/oecd-future-of-education-and-skills-2030/" target="_blank" class="block py-2 px-4 text-sm hover:bg-gray-200">원문 보기</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="introduction" class="bg-blue-800 text-white pt-20 pb-24">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">OECD Teaching Compass</h1>
+                <h2 class="text-2xl md:text-3xl font-light mb-8">교사를 교육과정 변화의 주체로 재정의하다</h2>
+                <p class="max-w-3xl mx-auto text-blue-100 leading-relaxed">
+                    Teaching Compass는 가르친다는 것과 교사가 된다는 것의 의미에 대한 미래지향적이고 총체적인 비전을 제시합니다. 교사와 학생 모두의 역량을 강화함으로써, 우리는 교육, 사회, 그리고 지구를 위한 더 나은 미래를 만들어갈 수 있습니다.
+                </p>
+                <div class="mt-10">
+                    <a href="#key-concepts" class="bg-white text-blue-800 font-bold py-3 px-8 rounded-full hover:bg-blue-100 transition-transform duration-300 transform hover:scale-105">
+                        핵심 개념 알아보기 <i class="fas fa-arrow-down ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Concepts Section -->
+        <section id="key-concepts" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800">Teaching Compass의 5가지 핵심 개념</h2>
+                    <p class="text-gray-600 mt-2">교수법의 미래를 탐색하기 위한 다섯 가지 기본 원칙</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Concept 1: Making the future we want -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-teal-100 text-teal-600 p-3 rounded-full mr-4">
+                                <i class="fas fa-lightbulb fa-2x"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">미래의 현실화</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            공유된 비전과 목적을 명확히 하여, 교육을 미래에 대한 공동의 열망과 일치시킵니다. 학생과 교사 모두를 위한 미래를 현실로 만듭니다.
+                        </p>
+                    </div>
+
+                    <!-- Concept 2: Anchoring the Compass -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full mr-4">
+                                <i class="fas fa-anchor fa-2x"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">나침반의 정착</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            강력한 직업적 정체성과 명확한 윤리적 가치에 교수법을 정착시켜, 교육자가 복잡성을 헤쳐나가고 학생의 학습과 웰빙을 증진하도록 돕습니다.
+                        </p>
+                    </div>
+
+                    <!-- Concept 3: Teacher agency -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-rose-100 text-rose-600 p-3 rounded-full mr-4">
+                                <i class="fas fa-users-cog fa-2x"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">교사의 주체성</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            의미 있는 교육 혁신을 시작하고 유지하는 데 필요한 자율성, 자신감, 역량을 갖춘 교육자를 양성하여 교육과정 변화를 주도합니다.
+                        </p>
+                    </div>
+
+                    <!-- Concept 4: Teacher competencies -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-amber-100 text-amber-600 p-3 rounded-full mr-4">
+                                <i class="fas fa-brain fa-2x"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">교사의 역량</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            교육 환경의 복잡성, 불확실성, 지속적인 변화를 효과적으로 관리할 수 있는 비판적 역량과 적응 기술을 함양합니다.
+                        </p>
+                    </div>
+
+                    <!-- Concept 5: Teacher well-being -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-100 text-green-600 p-3 rounded-full mr-4">
+                                <i class="fas fa-heart-pulse fa-2x"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">교사의 웰빙</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            교사가 개인적으로나 직업적으로 번창할 수 있도록 종합적인 웰빙 전략을 촉진하여, 학생들을 교육하고 영감을 줄 수 있는 역량을 유지합니다.
+                        </p>
+                    </div>
+                    
+                    <!-- Bonus: Learning Ecosystem -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-sky-100 text-sky-600 p-3 rounded-full mr-4">
+                                <i class="fas fa-sitemap fa-2x"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">학습 생태계</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                           교육자를 협력 네트워크 및 파트너십의 핵심 구성원으로 위치시켜, 공동 책임, 상호 학습, 그리고 체계적인 교육 개선을 촉진합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision for the Future Section -->
+        <section id="vision" class="bg-white py-20">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800">미래 교육을 위한 비전</h2>
+                    <p class="text-gray-600 mt-2">과거에서 배우고, 현재에 기반하며, 미래를 준비합니다.</p>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/600x400/3B82F6/FFFFFF?text=Future+Vision" alt="미래 비전 다이어그램" class="rounded-lg shadow-xl">
+                    </div>
+                    <div class="md:w-1/2 space-y-6">
+                        <div>
+                            <h4 class="text-2xl font-semibold mb-2 flex items-center"><i class="fas fa-history text-blue-600 mr-3"></i> 과거로부터의 학습</h4>
+                            <p class="text-gray-700 leading-relaxed">역사는 단순히 연대기가 아니라 검증된 아이디어와 경고의 교훈이 담긴 저수지입니다. 과거의 성공과 실패로부터 의도적으로 학습하여 회복탄력성과 적응력을 키웁니다.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl font-semibold mb-2 flex items-center"><i class="fas fa-map-marker-alt text-blue-600 mr-3"></i> 현재에 기반하기</h4>
+                            <p class="text-gray-700 leading-relaxed">가장 강력한 미래 사고는 '지금 여기'에 주의를 기울이는 것에서 시작됩니다. 내면의 목소리에 귀 기울이고, 사회 변화의 신호를 감지하며, 불확실성 속에서 떠오르는 감정을 인정합니다.</p>
+                        </div>
+                         <div>
+                            <h4 class="text-2xl font-semibold mb-2 flex items-center"><i class="fas fa-rocket text-blue-600 mr-3"></i> 미래를 위한 준비</h4>
+                            <p class="text-gray-700 leading-relaxed">단순히 '여기서 무엇이 효과가 있을까?'가 아니라 '무엇이 함께 작용할까?'를 묻는 습관을 통해 전체 시스템적 사고를 배양합니다. 상호의존성을 추적하고 단순한 해답의 유혹에 저항합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Ecosystem Section -->
+        <section id="ecosystem" class="py-20 bg-blue-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800">총체적 영향력을 위한 학습 생태계</h2>
+                    <p class="text-gray-600 mt-2">교육은 교사 혼자만의 일이 아닌, 다자간의 협력적 노력입니다.</p>
+                </div>
+                <div class="max-w-4xl mx-auto">
+                    <img src="https://placehold.co/800x450/E0F2FE/0891B2?text=Learning+Ecosystem" alt="학습 생태계 다이어그램" class="rounded-lg shadow-xl mb-8">
+                    <p class="text-center text-lg text-gray-700 leading-relaxed mb-10">
+                        진정한 교육 혁신은 교사, 학생, 학부모, 정책 입안자, 지역 사회, 기업 등 다양한 이해관계자들의 다각적인 노력을 통해 이루어집니다. Teaching Compass는 이러한 모든 주체들이 공동의 비전과 언어를 공유하고 협력할 수 있는 공통의 기반을 제공합니다.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <i class="fas fa-school text-3xl text-blue-600 mb-2"></i>
+                            <h4 class="font-semibold">학교</h4>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <i class="fas fa-users text-3xl text-teal-600 mb-2"></i>
+                            <h4 class="font-semibold">지역 사회</h4>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <i class="fas fa-landmark text-3xl text-indigo-600 mb-2"></i>
+                            <h4 class="font-semibold">정책 입안자</h4>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <i class="fas fa-building text-3xl text-rose-600 mb-2"></i>
+                            <h4 class="font-semibold">기업</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action -->
+        <section class="bg-gray-800 text-white py-16">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">미래 교육을 함께 만들어 갑시다</h2>
+                <p class="max-w-2xl mx-auto mb-8">
+                    OECD Teaching Compass는 교사들이 변화의 주체로서 잠재력을 최대한 발휘할 수 있도록 지원하는 프레임워크입니다. 오늘, 이 여정에 동참하여 교육의 새로운 지평을 열어보세요.
+                </p>
+                <a href="https://www.oecd.org/education/oecd-future-of-education-and-skills-2030/" target="_blank" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-500 transition-all duration-300 transform hover:scale-105 inline-block">
+                    더 알아보기 <i class="fas fa-external-link-alt ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2024 OECD Teaching Compass 재교육 프로그램. All Rights Reserved.</p>
+            <p class="text-sm mt-2">본 콘텐츠는 OECD의 공식 자료를 기반으로 교육 목적으로 재구성되었습니다.</p>
+            <div class="mt-4">
+                <a href="https://www.oecd.org/" target="_blank" class="text-gray-400 hover:text-white mx-2 transition-colors"><i class="fas fa-globe"></i> OECD</a>
+                <a href="https://www.oecd.org/education/" target="_blank" class="text-gray-400 hover:text-white mx-2 transition-colors"><i class="fas fa-graduation-cap"></i> OECD Education</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
